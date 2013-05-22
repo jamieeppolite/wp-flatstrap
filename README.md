@@ -22,7 +22,13 @@ ______________
 
 Currently features the following page templates
 
-    - Homepage template (seen on the homepage of this site)
-    - Standard page with right sidebar (this page)
+    - Homepage template
+    - Standard page with right sidebar
     - Page with left sidebar
     - Full width page
+    
+    
+UPDATE:
+______________
+
+22/5/2013: Flatstrap is going to be updated during this week to feature more advanced settings and updated style-sheet, make sure you start the project.
