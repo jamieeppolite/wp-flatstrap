@@ -317,7 +317,7 @@ function of_recognized_font_sizes() {
  */
 function of_recognized_font_faces() {
 	$default = array(
-		'"Helvetica Neue",Helvetica,Arial,sans-serif'   => 'Default',
+		'"Helvetica Neue",Helvetica,Arial,sans-serif'   => 'Helvetica Neue',
 		'arial'     => 'Arial',
 		'verdana'   => 'Verdana, Geneva',
 		'trebuchet' => 'Trebuchet',
@@ -325,7 +325,8 @@ function of_recognized_font_faces() {
 		'times'     => 'Times New Roman',
 		'tahoma'    => 'Tahoma, Geneva',
 		'palatino'  => 'Palatino',
-		'helvetica' => 'Helvetica*'
+		'helvetica' => 'Helvetica',
+        '"Lato",sans-serif' => 'Lato'
 		);
 	return apply_filters( 'of_recognized_font_faces', $default );
 }

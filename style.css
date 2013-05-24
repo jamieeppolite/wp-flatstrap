@@ -12,6 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 
 /* micro clearfix: http://nicolasgallagher.com/micro-clearfix-hack/ */
 /* For modern browsers */
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic");
+
 .clearfix:before,
 .clearfix:after {
     content:"";
@@ -48,6 +50,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html http://www.apache.org/lice
 
 body{
 	padding-top: 0;
+    font-family:"Lato", sans-serif;
 }
 
 /* Admin Top Navigation fixes */
@@ -109,6 +112,11 @@ input, textarea, select, .uneditable-input {
 	float: left;
 	margin-left: 10px;
 }
+
+/* button styling */
+
+
+
 
 /* post styling */
 

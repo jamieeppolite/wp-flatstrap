@@ -49,8 +49,32 @@ function optionsframework_options() {
 	//print_r($theList);
 	
 	// fixed or scroll position
-	$fixed_scroll = array("fixed" => "Fixed","scroll" => "Scroll");
-	
+    $fixed_scroll = array("fixed" => "Fixed","scroll" => "Scroll");
+
+    // Flat colors
+    $flat_colors = array(
+        "#1ABC9C" => "TURQUOISE",
+        "#16A085" => "GREEN SEA",
+        "#2ECC71" => "EMERALD",
+        "#27AE60" => "NEPHRITIS",
+        "#3498DB" => "PETER RIVER",
+        "#2980B9" => "BELIZE HOLE",
+        "#9B59B6" => "AMETHYST",
+        "#8E44AD" => "WISTERIA",
+        "#34495E" => "WET ASPHALT",
+        "#2C3E50" => "MIDNIGHT BLUE",
+        "#F1C40F" => "SUN FLOWER",
+        "#F39C12" => "ORANGE",
+        "#E67E22" => "CARROT",
+        "#D35400" => "PUMPKIN",
+        "#E74C3C" => "ALIZARIN",
+        "#C0392B" => "POMEGRANATE",
+        "#ECF0F1" => "CLOUDS",
+        "#BDC3C7" => "SILVER",
+        "#95A5A6" => "CONCRETE",
+        "#7F8C8D" => "ASBESTOS"
+    );
+
 	// Multicheck Defaults
 	$multicheck_defaults = array("one" => "1","five" => "1");
 	
@@ -81,13 +105,13 @@ function optionsframework_options() {
 						"type" => "heading");
 						
 	$options[] = array( "name" => "Headings",
-						"desc" => "Used in H1, H2, H3, H4, H5 & H6 tags.",
+						"desc" => "Used in H1, H2, H3, H4, H5 & H6 tags. Psst: to make it look great try colour #34495e",
 						"id" => "heading_typography",
 						"std" => "",
 						"type" => "wpbs_typography");
 						
 	$options[] = array( "name" => "Main Body Text",
-						"desc" => "Used in P tags.",
+						"desc" => "Used in P tags. Psst: to make it look great try colour #34495e",
 						"id" => "main_body_typography",
 						"std" => "",
 						"type" => "wpbs_typography");
@@ -122,12 +146,15 @@ function optionsframework_options() {
 						"options" => $fixed_scroll);
 						
 	$options[] = array( "name" => "Top nav background color",
-						"desc" => "Default used if no color is selected.",
+						"desc" => "Colors — is almost the most important part of the Flat UI. Better to use different shades of provided colors than new.",
 						"id" => "top_nav_bg_color",
 						"std" => "",
-						"type" => "color");
+                        "type" => "select",
+                        "class" => "mini",
+                        "options" => $flat_colors
+                        );
 						
-	$options[] = array( "name" => "Check to use a gradient for top nav background",
+	/* $options[] = array( "name" => "Check to use a gradient for top nav background",
 						"desc" => "Use gradient",
 						"id" => "showhidden_gradient",
 						"std" => "",
@@ -138,7 +165,7 @@ function optionsframework_options() {
 						"id" => "top_nav_bottom_gradient_color",
 						"std" => "",
 						"class" => "hidden",
-						"type" => "color");
+						"type" => "color"); */
 						
 	$options[] = array( "name" => "Top nav item color",
 						"desc" => "Link color.",
