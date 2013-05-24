@@ -32,3 +32,6 @@ UPDATE:
 ______________
 
 22/5/2013: Flatstrap is going to be updated during this week to feature more advanced settings and updated style-sheet, make sure you start the project.
+25/5/2013: Some changes:
+- Added some new typography stuff, a new font is available: Lato (http://www.latofonts.com/lato-free-fonts/)
+- New color selection for the Top nav bar to feature flat colours only
