@@ -558,8 +558,14 @@ blockquote.pull-left{
 	.sidebar{
 		margin-top: 0 !important;
 	}
-	
-	.widget_search input{
+
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+
+    .widget_search input{
 		width: 230px;
 	}
 	
